@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
@@ -16,6 +17,15 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadDataToCell()
+
+        let rootRef = FIRDatabase.database().reference()
+        let childlRef = FIRDatabase.database().reference(withPath: "number")
+        let itemsRef = rootRef.child("number")
+        let milkRef = itemsRef.child("color")
+        print(rootRef.key)
+        print(childlRef.key)
+        print(itemsRef.key)
+        print(milkRef.key)
 
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 134, height: 38))
         imageView.contentMode = .scaleAspectFit

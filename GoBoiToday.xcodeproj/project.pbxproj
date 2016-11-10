@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71D7EAAEE328296425C61ECC /* libPods-GoBoiToday.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCB10D4909E8CA098E5D935 /* libPods-GoBoiToday.a */; };
 		B9402CA71DD096C5000AA09C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9402CA51DD096C5000AA09C /* HomeTableViewCell.swift */; };
 		B9402CA81DD096C5000AA09C /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9402CA61DD096C5000AA09C /* HomeTableViewCell.xib */; };
 		B9402CAA1DD0992E000AA09C /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9402CA91DD0992E000AA09C /* HomeItem.swift */; };
@@ -17,9 +18,13 @@
 		B971593B1DD0621600B6AC41 /* GoBoiToday.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B97159391DD0621600B6AC41 /* GoBoiToday.xcdatamodeld */; };
 		B971593D1DD0621600B6AC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B971593C1DD0621600B6AC41 /* Assets.xcassets */; };
 		B97159401DD0621600B6AC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B971593E1DD0621600B6AC41 /* LaunchScreen.storyboard */; };
+		B9D8701C1DD47C97003BB40F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9D8701B1DD47C97003BB40F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BCB10D4909E8CA098E5D935 /* libPods-GoBoiToday.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoBoiToday.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		458A1759F5686C5E0D72B4CF /* Pods-GoBoiToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBoiToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoBoiToday/Pods-GoBoiToday.release.xcconfig"; sourceTree = "<group>"; };
+		540D1919705F40C0BD815876 /* Pods-GoBoiToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBoiToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoBoiToday/Pods-GoBoiToday.debug.xcconfig"; sourceTree = "<group>"; };
 		B9402CA51DD096C5000AA09C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		B9402CA61DD096C5000AA09C /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		B9402CA91DD0992E000AA09C /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		B971593C1DD0621600B6AC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B971593F1DD0621600B6AC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B97159411DD0621600B6AC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D8701B1DD47C97003BB40F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D7EAAEE328296425C61ECC /* libPods-GoBoiToday.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +57,8 @@
 			children = (
 				B97159311DD0621600B6AC41 /* GoBoiToday */,
 				B97159301DD0621600B6AC41 /* Products */,
+				BE97C97E23F341BF0363B98D /* Pods */,
+				BA88C146F58091624E546A2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +84,26 @@
 				B971593E1DD0621600B6AC41 /* LaunchScreen.storyboard */,
 				B97159411DD0621600B6AC41 /* Info.plist */,
 				B97159391DD0621600B6AC41 /* GoBoiToday.xcdatamodeld */,
+				B9D8701B1DD47C97003BB40F /* GoogleService-Info.plist */,
 			);
 			path = GoBoiToday;
+			sourceTree = "<group>";
+		};
+		BA88C146F58091624E546A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB10D4909E8CA098E5D935 /* libPods-GoBoiToday.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE97C97E23F341BF0363B98D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				540D1919705F40C0BD815876 /* Pods-GoBoiToday.debug.xcconfig */,
+				458A1759F5686C5E0D72B4CF /* Pods-GoBoiToday.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B97159441DD0621600B6AC41 /* Build configuration list for PBXNativeTarget "GoBoiToday" */;
 			buildPhases = (
+				C072F875123C162C91974F4B /* [CP] Check Pods Manifest.lock */,
 				B971592B1DD0621600B6AC41 /* Sources */,
 				B971592C1DD0621600B6AC41 /* Frameworks */,
 				B971592D1DD0621600B6AC41 /* Resources */,
+				397E83BAEE67CDAACFCD2554 /* [CP] Embed Pods Frameworks */,
+				E09444D13596288F20818AF1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,12 +170,61 @@
 			files = (
 				B97159401DD0621600B6AC41 /* LaunchScreen.storyboard in Resources */,
 				B971593D1DD0621600B6AC41 /* Assets.xcassets in Resources */,
+				B9D8701C1DD47C97003BB40F /* GoogleService-Info.plist in Resources */,
 				B9402CA81DD096C5000AA09C /* HomeTableViewCell.xib in Resources */,
 				B97159381DD0621600B6AC41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		397E83BAEE67CDAACFCD2554 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoBoiToday/Pods-GoBoiToday-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C072F875123C162C91974F4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E09444D13596288F20818AF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoBoiToday/Pods-GoBoiToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B971592B1DD0621600B6AC41 /* Sources */ = {
@@ -278,6 +357,7 @@
 		};
 		B97159451DD0621600B6AC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 540D1919705F40C0BD815876 /* Pods-GoBoiToday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoBoiToday/Info.plist;
@@ -290,6 +370,7 @@
 		};
 		B97159461DD0621600B6AC41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 458A1759F5686C5E0D72B4CF /* Pods-GoBoiToday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoBoiToday/Info.plist;
