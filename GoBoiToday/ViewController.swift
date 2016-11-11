@@ -13,23 +13,39 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
 
     @IBOutlet weak var tableView: UITableView!
     var homeItemList : Array<HomeItemStruct> = []
-    
+    var snusBrandsArray = [[String:AnyObject]]()
+
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
         self.loadDataToCell()
+        var ref : FIRDatabaseReference!
+        ref = FIRDatabase.database().reference()
+        let homeRef = ref.child("Homepage")
+        homeRef.observeSingleEvent(of: .value, with: { snapshot in
+            
+            for child in snapshot.children {
+                let childSnap = child as! FIRDataSnapshot
+                let snapshotValue = childSnap.value as! [String:AnyObject]
+                
+                var title = snapshotValue["title"] as? String ?? ""
+                print(title)
+//                lastName = (snapshotValue["last_name"] as? String) ?? ""
+//                pingID = (snapshotValue["ping_id"] as? String) ?? ""
+//                email = (snapshotValue["email"] as? String) ?? ""
 
-        let rootRef = FIRDatabase.database().reference()
-        let childlRef = FIRDatabase.database().reference(withPath: "number")
-        let itemsRef = rootRef.child("number")
-        let milkRef = itemsRef.child("color")
-        print(rootRef.key)
-        print(childlRef.key)
-        print(itemsRef.key)
-        print(milkRef.key)
-
+                
+            }
+            //reload the tableview
+        })
+        
+       
+        
+        
+        
+        
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 134, height: 38))
         imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "TitleImage1")
+        let image = UIImage(named: "TitleImage")
         imageView.image = image
         navigationItem.titleView = imageView
         // Do any additional setup after loading the view, typically from a nib.

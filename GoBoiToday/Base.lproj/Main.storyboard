@@ -59,7 +59,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="P25-Ki-bMU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.62510762676881537" green="0.87896268140364575" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

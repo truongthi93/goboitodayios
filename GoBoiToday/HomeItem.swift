@@ -9,13 +9,17 @@
 import UIKit
 
 class HomeItem: NSObject {
-    let mTitle :String
-    let mDescription: String
-    let isCall: Bool
-    
-    init(title: String, description: String, isCall: Bool) {
+    var mTitle :String
+    var mDescription: String
+    var isCallable: String
+    var iconBackgroudColor: String
+
+    init(title: String, description: String, isCall: String, iconBackgroudColor: String) {
         self.mTitle = title
         self.mDescription = description
-        self.isCall = isCall
+        self.isCallable = isCall
+        self.iconBackgroudColor = iconBackgroudColor
     }
+    
+    
 }
