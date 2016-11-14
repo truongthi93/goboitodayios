@@ -10,7 +10,6 @@
 		71D7EAAEE328296425C61ECC /* libPods-GoBoiToday.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCB10D4909E8CA098E5D935 /* libPods-GoBoiToday.a */; };
 		B9402CA71DD096C5000AA09C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9402CA51DD096C5000AA09C /* HomeTableViewCell.swift */; };
 		B9402CA81DD096C5000AA09C /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9402CA61DD096C5000AA09C /* HomeTableViewCell.xib */; };
-		B9402CAA1DD0992E000AA09C /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9402CA91DD0992E000AA09C /* HomeItem.swift */; };
 		B9402CAC1DD09948000AA09C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9402CAB1DD09948000AA09C /* UIViewExtensions.swift */; };
 		B97159331DD0621600B6AC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97159321DD0621600B6AC41 /* AppDelegate.swift */; };
 		B97159351DD0621600B6AC41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97159341DD0621600B6AC41 /* ViewController.swift */; };
@@ -27,7 +26,6 @@
 		540D1919705F40C0BD815876 /* Pods-GoBoiToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoBoiToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoBoiToday/Pods-GoBoiToday.debug.xcconfig"; sourceTree = "<group>"; };
 		B9402CA51DD096C5000AA09C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		B9402CA61DD096C5000AA09C /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
-		B9402CA91DD0992E000AA09C /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		B9402CAB1DD09948000AA09C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		B971592F1DD0621600B6AC41 /* GoBoiToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoBoiToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97159321DD0621600B6AC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				B9402CAB1DD09948000AA09C /* UIViewExtensions.swift */,
-				B9402CA91DD0992E000AA09C /* HomeItem.swift */,
 				B9402CA51DD096C5000AA09C /* HomeTableViewCell.swift */,
 				B9402CA61DD096C5000AA09C /* HomeTableViewCell.xib */,
 				B97159321DD0621600B6AC41 /* AppDelegate.swift */,
@@ -141,7 +138,7 @@
 				TargetAttributes = {
 					B971592E1DD0621600B6AC41 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -232,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B97159351DD0621600B6AC41 /* ViewController.swift in Sources */,
-				B9402CAA1DD0992E000AA09C /* HomeItem.swift in Sources */,
 				B97159331DD0621600B6AC41 /* AppDelegate.swift in Sources */,
 				B9402CA71DD096C5000AA09C /* HomeTableViewCell.swift in Sources */,
 				B9402CAC1DD09948000AA09C /* UIViewExtensions.swift in Sources */,
@@ -360,10 +356,15 @@
 			baseConfigurationReference = 540D1919705F40C0BD815876 /* Pods-GoBoiToday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: testapp.tma@gmail.com (V9Q5BE2H9F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GoBoiToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UIT.GoBoiToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -373,6 +374,9 @@
 			baseConfigurationReference = 458A1759F5686C5E0D72B4CF /* Pods-GoBoiToday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: testapp.tma@gmail.com (V9Q5BE2H9F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GoBoiToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UIT.GoBoiToday;
